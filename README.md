@@ -36,14 +36,48 @@ airline/
 
 1. Clone the repository
 2. Install dependencies:
+
+For Linux:
+
    ```bash
    pip install -r requirements.txt
+   ```
+For Mac:
+
+Create a virtual environment for installing project dependencies:
+
+a. Navigate to the project root folder
+
+    e.g. cd /Users/uni/github/airline-assignment
+
+b. Create a virtual environment:
+
+  ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   ```
+
+c. Install requirements.txt
+  ```bash
+   python3 -m pip install requirements.txt
+   ```
+
+d. Set PYTHONPATH
+  ```bash
+   e.g. export PYTHONPATH="/Users/uni/github/airline-assignment"
    ```
 
 ## Running the Application
 
+For Linux:
+
 ```bash
 python main.py
+```
+
+For Mac:
+```bash
+python3 -m main
 ```
 
 ## Running Tests

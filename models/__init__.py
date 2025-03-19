@@ -27,8 +27,15 @@ class BaseModel(ABC):
                 record['client_id'] = int(record['client_id'])
             if 'airline_id' in record:
                 record['airline_id'] = int(record['airline_id'])
-        with open(filename, 'w') as f:
-            json.dump(records, f, default=str)
+        with open(filename, 'r+') as f:
+            try:
+                append_record = json.load(f)
+                append_record.update(records)
+                f.seek(0)
+                json.dump(append_record, f, default=str, indent=4)
+            except:
+                append_record = {}
+                json.dump(records, f, default=str, indent=4)
     
     @staticmethod
     def load_records(filename):

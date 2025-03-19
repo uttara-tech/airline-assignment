@@ -13,3 +13,65 @@
     "phone_number": ""
   }
 ]
+[
+    {
+        "id": 1,
+        "type": "client",
+        "name": "Uttara",
+        "address_line1": "Pune",
+        "address_line2": "",
+        "address_line3": "",
+        "city": "Pune",
+        "state": "MH",
+        "zip_code": "411098",
+        "country": "India",
+        "phone_number": "078987234"
+    }
+][
+    {
+        "id": 1,
+        "type": "client",
+        "name": "Uttara",
+        "address_line1": "Pune",
+        "address_line2": "",
+        "address_line3": "",
+        "city": "Pune",
+        "state": "MH",
+        "zip_code": "411098",
+        "country": "India",
+        "phone_number": "078987234"
+    },
+    {
+        "id": 2,
+        "type": "airline",
+        "company_name": "Swiss air"
+    }
+][
+    {
+        "id": 1,
+        "type": "client",
+        "name": "Uttara",
+        "address_line1": "Pune",
+        "address_line2": "",
+        "address_line3": "",
+        "city": "Pune",
+        "state": "MH",
+        "zip_code": "411098",
+        "country": "India",
+        "phone_number": "078987234"
+    },
+    {
+        "id": 2,
+        "type": "airline",
+        "company_name": "Swiss air"
+    },
+    {
+        "id": 3,
+        "type": "flight",
+        "client_id": 1,
+        "airline_id": 1,
+        "date": "2025-03-19T10:20:59.165501",
+        "start_city": "PUN",
+        "end_city": "ZH"
+    }
+]
